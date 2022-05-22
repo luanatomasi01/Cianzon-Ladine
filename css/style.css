@@ -1,0 +1,404 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	height: fit-content;
+}
+
+header {
+	height: 50vh;
+	background-image: url(../img/head1.jpg);
+	background-size: cover;
+}
+
+#topdiv {
+	height: 85%;
+}
+
+.lang {
+	height: 8%;
+	float: right;
+	margin: 10px 10px 0px 0px;
+	padding: 2px;
+}
+
+.activelang {
+	background-color: lightblue;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 13vh;
+	font-family: 'Cookie', cursive;
+	font-size: 7em;
+}
+
+#divmenu {
+	height: 7.5vh;
+	background-color: rgb(153, 194, 255,.5);
+}
+
+.link {
+	text-decoration: none; 
+	color: white;
+	font-family: 'Athiti', sans-serif;
+	font-weight: 600;
+}
+
+.active {
+	border-top-left-radius: 15px; 
+	border-top-right-radius: 15px;
+	background-color: white;
+	color: rgb(0, 82, 204);
+	font-family: 'Athiti', sans-serif;
+	font-weight: 600;
+}
+
+nav {
+	padding-top: 23px;
+	padding-left: 50px;
+	/*padding-right: 65%;*/
+
+}
+
+nav ul {
+	list-style-type: none;
+	padding-left: 0px !important;
+	display: flex;
+	justify-content: space-between;
+	width: 100%}
+
+nav ul li {
+		display: flex;
+	align-self: flex-end;
+}
+
+nav ul li a {
+	display: inline-block;
+	padding: 4px 12px 3px 12px;
+	border-top-left-radius: 15px; 
+	border-top-right-radius: 15px;
+	background-color: rgb(0, 82, 204);
+	transition:background-color .50s ease-in-out;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	background-color: white;
+	color: rgb(0, 82, 204);
+}
+
+#search {
+	padding-top: 20px;
+	padding-right: 3px;
+	display: flex;
+  	justify-content: flex-end;
+  }
+
+main {
+	position: relative;
+	/*height: 100vh;*/
+}
+
+.wrapper {
+	width: 100%;
+}
+
+.align-items-start {
+  display: flex;
+  min-height: 100vh;
+  align-items: stretch !important;
+}
+
+.col-lg-2 {
+    background-image: linear-gradient(lightblue 5%, white, darkgreen 100%)
+}
+
+.col-lg-8 {
+    padding: 0px;
+}
+
+.row {--bs-gutter-x: 0rem;}
+
+.container {
+	height: 100%;
+	margin: 0px !important;
+	margin-right: 0px !important;
+	padding: 0px !important;
+}
+
+@media (min-width: 576px) {
+	.container {
+		max-width: 100% !important;}
+}
+
+@media only screen and (max-width: 992px) {
+	.descrizioni {
+		padding-right: 2.5em;
+	}
+	#morepadding {
+		padding-top: 2em !important;
+	}
+
+}
+
+section {
+	padding-top: 5em;
+}
+
+#frase {
+	text-align: center;
+	font-family: 'Cookie', cursive;
+	font-size: 2.5em;
+	padding: 10px 0px;
+	background: linear-gradient(45deg, white, rgb(255, 204, 204), white);
+	text-shadow: 2px 2px 4px white;
+}
+
+/*#cit {
+	background-image: url(../img/frase1.jpg);
+	background-size: cover;
+}*/
+
+.sparkle {
+	height: 1em;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0.5em;
+	font-family: 'Alegreya', serif;
+}
+
+.descrizioni {
+	font-family: 'Alegreya', serif;
+
+}
+
+#breadcrumbs {
+	padding-top: 0px !important;
+}
+
+.breadcrumb {
+	 padding: 10px 16px;
+  list-style: none;
+  background-color: rgb(153, 194, 255,.20);
+  margin: 0px;
+  font-family: 'Alegreya', serif;
+}
+
+.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;}
+
+
+.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+h2 {
+	font-family: 'Athiti', sans-serif;
+}
+
+#imglad {
+	width: 350px;
+	border: 1px solid black;
+	align-content: center;
+}
+
+#morepadding {
+	padding-top: 7.5em;
+	align-content: center;
+}
+
+figcaption {
+	font-family: 'Athiti', sans-serif;
+	font-weight: 600;
+}
+
+.testo {
+	padding-left: 3em;
+	word-wrap: break-word;
+	line-height: 2;
+	text-align: justify;
+}
+
+#comandi {
+	text-align: center;
+	font-family: 'Athiti', sans-serif;
+}
+
+#alfabeto {
+	list-style-type: none;
+	text-align: center;
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+
+ul#alfabeto li {
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+#alfabeto li a {
+	text-decoration: none;
+	font-size: 1.7em;
+	font-family: 'Athiti', sans-serif;
+	font-weight: bold;
+	color: darkgrey;
+}
+
+#alfabeto li a:hover {
+	color: black;
+}
+
+#lettere {
+	font-size: 1.7em;
+	font-family: 'Athiti', sans-serif;
+	font-weight: bold;
+	color: darkgrey;
+	text-align: center;
+	padding-top: 2em;
+	flex-direction: column;
+}
+
+#lettere ul li {
+	list-style-type: none;
+	font-family: 'Athiti', sans-serif;
+	font-weight: 600;
+}
+
+.fa-arrow-up {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: darkgrey;
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 1em;
+}
+
+.fa-itunes-note {
+	padding: 1em;
+	color: black;
+}
+
+.songtitle {
+	text-align: center;
+	padding-top: 1em;
+}
+
+.lyrics {
+	text-align: center;
+	padding-top: 1em;
+	line-height: 2;
+	font-family: 'Alegreya', serif;
+	font-size: 1.15em;
+}
+
+.inline {
+	display: inline-flex;
+}
+
+.col-3 {
+	background-image: linear-gradient(rgb(255, 204, 204,.5), white)
+	
+}
+
+#nopadding {
+	padding-top: 0px;
+}
+
+.botpadding {
+	padding-bottom: 3em;
+}
+
+#doc {
+	padding: 3em 4em 4em 4em;
+	line-height: 2;
+	font-family: 'Alegreya', serif;
+}
+
+#doctitle {
+	text-align: center;
+	color: rgb(255, 204, 204);
+	font-size: 3.5em;
+}
+
+.doc-dir {
+	font-family:'Athiti', sans-serif;
+	font-size: 2.25em;
+	padding: 7px 0px;
+	margin-top: 8px;
+}
+
+h4 {
+	font-family:'Athiti', sans-serif;
+	font-size: 1.75em;
+	padding: 5px 0px;
+	margin-top: 8px;
+}
+
+h5 {
+	font-family:'Athiti', sans-serif;
+	font-size: 1.5em;
+	padding: 5px 0px;
+	margin-top: 8px;
+}
+
+footer {
+	background-image: url(../img/foot1.jpg);
+	background-size: cover;
+ 	text-align: center;
+ 	height: 30vh;
+ 	color: white;
+ 	font-family: 'Athiti', sans-serif;
+}
+
+#icondiv {
+	/*margin: 10px;*/
+	/*border-top: 1px solid darkgray;*/
+}
+
+#botdiv {
+	height: 10vh;
+}
+
+.icon {
+	text-decoration: none;
+	color: white;
+}
+
+.icon:hover {
+	color: limegreen;
+}
+.fa-folder, .fa-copyright {
+	font-size: 1.5em;
+	padding: 10px;
+	border-radius: 1.5em;
+	border: 1px solid;
+	margin: 0px 10px;
+}
+
+.footer {
+	text-align: center;
+	padding-top: 2em;
+}
