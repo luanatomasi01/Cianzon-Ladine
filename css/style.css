@@ -6,6 +6,19 @@ body {
 	height: fit-content;
 }
 
+b {
+	font-family: 'Alegreya', serif;
+	font-weight: 700;
+}
+
+.font {
+	font-family: 'Alegreya', serif;
+}
+
+.sans {
+	font-family: 'Athiti', sans-serif;
+
+}
 header {
 	height: 50vh;
 	background-image: url(../img/head1.jpg);
