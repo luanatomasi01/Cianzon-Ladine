@@ -40,7 +40,7 @@
 			
 						<div class="container">
 							<div class="row" id="divmenu">
-								<div class="col-5">
+								<div class="col-sm-5 col-xs-12">
 									<nav>
 										<ul>
 											<li><a class="link" href="index.html">HOME</a></li>
@@ -51,19 +51,10 @@
 								</div>
 
 								<div id="search" class="col-7">
-									<form action="/action_page.php">
-										<input title="scrivi il titolo di una canzone" type="search" value="" id="indian" placeholder="Cerca..." name="search" onchange="openpage()">
+									<form class="d-none d-sm-block" action="/action_page.php">
+										<input title="scrivi il titolo di una canzone" type="search" value="" id="indian" placeholder="Cerca..." name="search" onsearch="openpage()">
 										<button type="submit"><i class="fa fa-search"></i></button>
 									</form>
-									<script>
-									function openpage() {
-										var x = document.getElementById("indian").value;
-										if (x === "la cianzon de la val de fascia") {
-											window.open("la_cianzon_de_la_val_de_fascia.html","_self")	
-										}
-									}
-
-								</script>
 								</div> 
 							</div>
 						</div>
@@ -96,14 +87,35 @@
 								<br>
 								<h4>1.2 Struttura e Layout</h4>
 								<h5>2.2.1 Architettura del Sito</h5>
+								<img class="docimg1" src="img/schema.jpg" alt="schema ad albero del sito">
 								<h5>2.2.2 Wireframe</h5>
+								<div class="container">
+									<div class="row">
+								<div class="col-lg-6 col-md-12">
+									<img class="docimg" src="img/wf_home.jpg" alt="wireframe home">
+								</div>
+								<div class="col-lg-6 col-md-12">
+									<img class="docimg" src="img/wf_about.jpg" alt="wireframe about">
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-6 col-md-12">
+									<img class="docimg" src="img/wf_songs.jpg" alt="wireframe canzoni">
+								</div>
+								<div class="col-lg-6 col-md-12">
+									<img class="docimg" src="img/wf_song.jpg" alt="wireframe singola canzone">
+								</div>
+							</div>
+						</div>
 								<h5>2.2.3 Look and Feel</h5>
 								I colori principali del sito rispecchiano quelli della <b>bandiera ladina</b>: azzurro in alto nell’header (a rappresentare il cielo), bianco per il body (la neve sulle montagne) e il verde in basso nel footer (il bosco e i prati). Per un ladino questi colori sono immediatamente identificabili. 
 								Ho inoltre scelto di utilizzare 3 font, un handwriting (Cookie) per il titolo e la citazione nella home, un sans serif (Athiti) per i titoli e le voci di menu, e un serif (Alegreya) per i testi più lunghi. Le immagini dell’header e del footer sono state scattate da me e raffigurano scorci di paesaggi della Val di Fassa.
 								<br>
 								<h4>1.3 Linguaggi e Strumenti</h4>
 								<h5>1.3.1 Linguaggi web utilizzati</h5>
-								Sono stati utilizzati <b>HTML</b> e <b>CSS</b>.
+								Sono stati utilizzati <b>HTML</b>, <b>CSS</b> e <b>Javascript</b>.
 								<h5>1.3.2 Strumenti tecnologici utilizzati</h5>
 								Sono stati utilizzati:
 								<ul>
@@ -128,7 +140,7 @@
 								<h4>2.2 Obiettivi comunicativi</h4>
 								Cianzon Ladine vuole <b>informare</b> e <b>diffondere</b> la letteratura musicale ladina tramite il digitale. È anche un modo per unire le persone in ambienti di festa tramite la musica popolare.
 								Per fare ciò, ho dovuto effettuare delle ricerche in biblioteche e archivi per raccogliere il materiale da trascrivere sulla rete. Ovviamente il progetto è in una fase primordiale e si prefigge di essere ampliato e integrato.<br>
-								Mi prefiggo di raggiungere almeno <b>100 visite</b> alle pagine del mio sito, di cui la maggior parte dalle zone ladine (quindi, verosimilmente, da un utente primario), e almeno <b>50 like</b> ai post di pubblicizzazione sui social.
+								Mi prefiggo di raggiungere almeno <b>150 visite</b> alle pagine del mio sito e almeno <b>100 visualizzazioni</b> al reel di pubblicizzazione su Instagram.
 								<br>
 								<h4>2.3 Target Utente e Messaggio</h4>
 								Il target principale è un target di <b>ladinofoni</b>, verosimilmente tra i 16 e i 35/40, cioè quelli che più probabilmente possono voler accedere digitalmente a testi di canzoni in ladino.
@@ -145,6 +157,21 @@
 									<li>campagna di passaparola (a voce e tramite Whatsapp)</li>
 								</ul>
 								<h4>2.5 Valutazione dei Risultati</h4>
+								Le 150 visite al sito sono state raggiunte e superate.<br>
+								<img class="docimg"src="img/stats1.png" alt="statistica 233 utenti"><br>
+								Altre statistiche interessanti:<br>
+								<img class="docimg1" src="img/stats2.jpg" alt="statistiche provenienza utenti e eventi"><br>
+								Le 100 visualizzazioni al reel promozionale su Instagram sono state largamente superate (<a href="https://www.instagram.com/lou.tomasi/reels/">Vedi Instagram</a>)<br>
+								<div class="container">
+									<div class="row">
+										<div class="col-lg-6 col-md-12">
+											<img class="docimg" src="img/insta1.png" alt="+900 visualizzazioni Instagram">
+									</div>
+									<div class="col-lg-6 col-md-12">
+										<img class="docimg" src="img/insta2.png" alt="reel di promozione Instagram">
+									</div>
+								</div>
+							</div>
 							</p>
 						</section>
 					</main>
@@ -161,5 +188,6 @@
 				<div class="col-lg-2 col-sm-0"></div>
 			</div>
 		</div>
+				<script type="text/javascript" src="js/index.js"></script>
 	</body>
 	</html>

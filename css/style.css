@@ -415,3 +415,11 @@ footer {
 	text-align: center;
 	padding-top: 2em;
 }
+
+.docimg1 {
+	max-width: 50%;
+}
+
+.docimg {
+	max-width: 80%;
+}

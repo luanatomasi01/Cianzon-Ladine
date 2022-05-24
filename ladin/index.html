@@ -62,18 +62,9 @@
 								<p class="center">Cer chiò na cianzon:</p>
 								<div class="form-container">
 									<form class="center" action="/action_page.php">
-										<input title="scrif ite l titol de na cianzon" type="search" value="" id="indian" placeholder="Cerca..." name="search" onchange="openpage()">
+										<input title="scrif ite l titol de na cianzon" type="search" value="" id="indian" placeholder="Cerca..." name="search" onsearch="openpage()">
 										<button type="submit"><i class="fa fa-search"></i></button>
 									</form>
-									<script>
-									function openpage() {
-										var x = document.getElementById("indian").value;
-										if (x === "la cianzon de la val de fascia") {
-											window.open("la_cianzon_de_la_val_de_fascia.html","_self")	
-										}
-									}
-
-								</script>
 							</section>
 						</main>
 						<footer>
@@ -89,6 +80,6 @@
 					<div class="col-lg-2 col-md-0"></div>
 			</div>
 		</div>
-		<script src="js/index.js"></script>
+				<script type="text/javascript" src="../js/index.js"></script>
 	</body>
 </html>

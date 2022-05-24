@@ -49,18 +49,9 @@
 									</div>
 									<div id="search" class="col-7">
 										<form class="d-none d-sm-block" action="/action_page.php">
-										<input title="scrivi il titolo di una canzone" type="search" value="" id="indian" placeholder="Cerca..." name="search" onchange="openpage()">
+										<input title="scrivi il titolo di una canzone" type="search" value="" id="indian" placeholder="Cerca..." name="search" onsearch="openpage()">
 										<button type="submit"><i class="fa fa-search"></i></button>
 									</form>
-									<script>
-									function openpage() {
-										var x = document.getElementById("indian").value;
-										if (x === "la cianzon de la val de fascia") {
-											window.open("la_cianzon_de_la_val_de_fascia.html","_self")	
-										}
-									}
-
-								</script>
 									</div> 
 								</div>
 							</div>
@@ -120,5 +111,6 @@
 					<div class="col-lg-2 col-md-0"></div>
 			</div>
 		</div>
+				<script type="text/javascript" src="js/index.js"></script>
 	</body>
 </html>
